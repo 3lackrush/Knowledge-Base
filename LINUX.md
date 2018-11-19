@@ -13,4 +13,8 @@ Or just let yum do the dirty work.
 sudo yum install somePackage.rpm 
 ```
 
-
+### Decompress
+01. tar.bz2  
+```
+tar -xjvf *.tar.bz2
+```
