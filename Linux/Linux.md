@@ -18,3 +18,9 @@ sudo yum install somePackage.rpm
 ```
 tar -xjvf *.tar.bz2
 ```
+
+### Traffic related
+01. replay pcap 
+```
+sudo tcpreplay -i wlp4s0 -tK --loop 1 --unique-ip web.pcap
+```
