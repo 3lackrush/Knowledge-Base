@@ -24,3 +24,13 @@ tar -xjvf *.tar.bz2
 ```
 sudo tcpreplay -i wlp4s0 -tK --loop 1 --unique-ip web.pcap
 ```
+
+### go get through local socks5 proxy
+```
+git config --global http.proxy socks5://127.0.0.1:1080
+http_proxy=socks5://127.0.0.1:1080 go get -u github.com/gin-gonic/gin
+```
+revert git global configuration
+```
+git config --global --unset http.proxy
+```
