@@ -18,3 +18,7 @@ sudo yum install somePackage.rpm
 ```
 tar -xjvf *.tar.bz2
 ```
+### Process Killing
+```
+ps -ef | grep some_process_name | grep -v | grep | awk '{print $2}' | xargs kill -9
+```
